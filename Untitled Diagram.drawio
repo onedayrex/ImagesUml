@@ -1,23 +1,49 @@
-<mxfile host="app.diagrams.net" modified="2020-08-19T01:27:28.689Z" agent="5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="M0LKLjMuxymzVstY92yw" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-19T01:39:23.371Z" agent="5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="tVw3OSl5lqlUcrTOj9zB" version="13.6.2" type="github">
   <diagram id="HceogB8nZZlcLV3kAq2E" name="Page-1">
     <mxGraphModel dx="1422" dy="1963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="4UymY73XuzZEumnYel4M-4" value="&lt;h1&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;单例模式&lt;/font&gt;&lt;/h1&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
-          <mxGeometry x="10" y="-575" width="220" height="40" as="geometry" />
+          <mxGeometry y="-740" width="220" height="40" as="geometry" />
         </mxCell>
         <mxCell id="4UymY73XuzZEumnYel4M-6" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="-680" width="20" height="250" as="geometry" />
+          <mxGeometry x="230" y="-1010" width="20" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="4UymY73XuzZEumnYel4M-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4UymY73XuzZEumnYel4M-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="-1010" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="4UymY73XuzZEumnYel4M-8" value="&lt;h2&gt;饥汉式&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="-710" width="120" height="60" as="geometry" />
+          <mxGeometry x="280" y="-1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4UymY73XuzZEumnYel4M-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4UymY73XuzZEumnYel4M-11" target="4UymY73XuzZEumnYel4M-18">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4UymY73XuzZEumnYel4M-11" value="&lt;h2&gt;饱汉式&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="-585" width="120" height="60" as="geometry" />
+          <mxGeometry x="280" y="-750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4UymY73XuzZEumnYel4M-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4UymY73XuzZEumnYel4M-12" target="4UymY73XuzZEumnYel4M-19">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="4UymY73XuzZEumnYel4M-12" value="&lt;h2&gt;枚举式&lt;/h2&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="280" y="-460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4UymY73XuzZEumnYel4M-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4UymY73XuzZEumnYel4M-17" target="4UymY73XuzZEumnYel4M-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4UymY73XuzZEumnYel4M-17" value="&lt;span style=&quot;text-align: left&quot;&gt;使用静态成员的方式来初始化自身，当类初始化时创建，生命周期一直存在，使用类加载的机制来创建实例&lt;/span&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="-1070" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4UymY73XuzZEumnYel4M-18" value="&lt;div&gt;只有调用时才去创建对应的实例&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="460" y="-760" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4UymY73XuzZEumnYel4M-19" value="&lt;div&gt;&lt;span&gt;用枚举的方式来创建实例&lt;/span&gt;&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="460" y="-470" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4UymY73XuzZEumnYel4M-22" value="&lt;div style=&quot;text-align: justify&quot;&gt;public class Singleton {&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&amp;nbsp; &amp;nbsp; public static final Singleton instance = new Singleton();&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&amp;nbsp; &amp;nbsp; private Singleton() {&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&amp;nbsp; &amp;nbsp; public static Singleton newInstance() {&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return instance;&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;}&lt;/div&gt;&lt;div style=&quot;text-align: justify&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;strokeColor=#d6b656;fillColor=#fff2cc;gradientColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="700" y="-1110" width="280" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
